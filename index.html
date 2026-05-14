@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>601 Pearl Street, Ojai &mdash; Entitled 9-Home Development | LAAA Team</title>
+<meta name="description" content="601 Pearl Street, Ojai. Fully entitled 9-home small-lot subdivision on 10 platted lots. Approved Architectural, Civil, Landscape, and Structural. $3,700,000. LAAA Team at Marcus & Millichap." />
+<meta property="og:title" content="601 Pearl Street, Ojai &mdash; Entitled 9-Home Development" />
+<meta property="og:description" content="Fully entitled 9-home small-lot subdivision in downtown-adjacent Ojai. $3.7M. Marketed by Logan Ward, Glen Scher, and Filip Niculete." />
+<meta property="og:image" content="images/601-pearl-rendering.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #1B3A5C;
+    --navy-dark: #122a44;
+    --navy-light: #2a5380;
+    --gold: #C5A258;
+    --gold-light: #d4b572;
+    --gold-dark: #a88742;
+    --white: #FFFFFF;
+    --off-white: #FAF9F6;
+    --gray-50: #F5F5F5;
+    --gray-100: #EEEEEE;
+    --gray-200: #E0E0E0;
+    --gray-400: #9CA3AF;
+    --gray-600: #4B5563;
+    --gray-800: #1F2937;
+    --black: #000000;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--gray-800);
+    line-height: 1.6;
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; color: var(--navy); }
+  .serif { font-family: 'Playfair Display', Georgia, serif; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 920px; margin: 0 auto; padding: 0 32px; }
+
+  /* ===== NAV ===== */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(27, 58, 92, 0.97);
+    backdrop-filter: blur(8px);
+    padding: 14px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  nav .container { display: flex; justify-content: space-between; align-items: center; }
+  nav img { height: 32px; }
+  nav ul { display: flex; gap: 28px; list-style: none; }
+  nav a { color: var(--white); text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 800px) { nav ul { display: none; } }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 88vh;
+    background: linear-gradient(135deg, rgba(27,58,92,0.85) 0%, rgba(18,42,68,0.7) 100%), url('images/601-pearl-rendering.jpg') center/cover no-repeat;
+    color: var(--white);
+    display: flex; align-items: center;
+    padding: 80px 0;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; width: 100%; }
+  .hero .eyebrow {
+    color: var(--gold); font-size: 14px; font-weight: 600;
+    letter-spacing: 4px; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .hero h1 {
+    color: var(--white); font-size: clamp(40px, 6vw, 76px); line-height: 1.05;
+    margin-bottom: 16px; font-weight: 500;
+  }
+  .hero .subtitle {
+    font-size: clamp(18px, 2.2vw, 24px); color: rgba(255,255,255,0.85);
+    margin-bottom: 36px; max-width: 720px; font-weight: 300;
+  }
+  .hero-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px; max-width: 920px; margin-top: 40px;
+  }
+  .hero-stat {
+    background: rgba(255,255,255,0.08);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px;
+    backdrop-filter: blur(6px);
+  }
+  .hero-stat .val {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px; color: var(--gold); line-height: 1;
+    margin-bottom: 6px; font-weight: 600;
+  }
+  .hero-stat .lbl {
+    font-size: 11px; color: rgba(255,255,255,0.75);
+    letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;
+  }
+
+  /* ===== SECTIONS ===== */
+  section { padding: 90px 0; }
+  section.alt { background: var(--gray-50); }
+  section.navy {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: var(--white);
+  }
+  section.navy h2, section.navy h3 { color: var(--white); }
+  section.navy h2::after { background: var(--gold); }
+  .section-eyebrow {
+    color: var(--gold); font-size: 12px; font-weight: 700;
+    letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px;
+  }
+  h2 {
+    font-size: clamp(32px, 4vw, 46px); margin-bottom: 24px; line-height: 1.15;
+    position: relative; padding-bottom: 18px;
+  }
+  h2::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 60px; height: 3px; background: var(--gold);
+  }
+  h3 { font-size: 24px; margin-bottom: 14px; margin-top: 24px; }
+  p { margin-bottom: 18px; font-size: 16px; }
+  p.lead { font-size: 19px; color: var(--gray-600); line-height: 1.65; }
+  section.navy p.lead { color: rgba(255,255,255,0.85); }
+
+  /* ===== HIGHLIGHTS GRID ===== */
+  .highlights {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; margin-top: 40px;
+  }
+  .highlight-card {
+    background: var(--white); border-left: 4px solid var(--gold);
+    padding: 28px 26px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .highlight-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+  .highlight-card h4 {
+    color: var(--navy); font-size: 17px; margin-bottom: 10px;
+    font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .highlight-card p { font-size: 15px; color: var(--gray-600); margin: 0; }
+
+  /* ===== KEY METRICS BAR ===== */
+  .key-metrics {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0; background: var(--navy); color: var(--white);
+    margin: 50px 0;
+  }
+  .key-metric {
+    padding: 32px 24px; text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+  .key-metric:last-child { border-right: none; }
+  .key-metric .val {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px; color: var(--gold); line-height: 1;
+    margin-bottom: 8px; font-weight: 600;
+  }
+  .key-metric .lbl {
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: rgba(255,255,255,0.8); font-weight: 500;
+  }
+  @media (max-width: 700px) {
+    .key-metric { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse; margin: 28px 0;
+    font-size: 14px; background: var(--white);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  th {
+    background: var(--navy); color: var(--white);
+    padding: 14px 16px; text-align: left; font-weight: 600;
+    font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--gray-100); }
+  tr:hover td { background: var(--gray-50); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.center, th.center { text-align: center; }
+  tr.highlight td { background: rgba(197, 162, 88, 0.12); font-weight: 600; }
+  .table-wrap { overflow-x: auto; margin: 28px 0; }
+  .table-wrap table { margin: 0; }
+
+  /* ===== TWO COLUMN ===== */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  @media (max-width: 800px) { .two-col { grid-template-columns: 1fr; gap: 32px; } }
+
+  /* ===== PROPERTY OVERVIEW BOX ===== */
+  .info-box {
+    background: var(--white); padding: 30px 32px;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .info-box h4 {
+    color: var(--navy); font-family: 'Inter', sans-serif;
+    font-size: 13px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2px; margin-bottom: 18px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .info-box dl { display: grid; grid-template-columns: 1fr 1.4fr; gap: 12px 16px; font-size: 14px; }
+  .info-box dt { color: var(--gray-600); font-weight: 500; }
+  .info-box dd { color: var(--gray-800); font-weight: 600; }
+
+  /* ===== PRO FORMA ===== */
+  .pro-forma {
+    background: var(--white); padding: 36px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .pro-forma table { box-shadow: none; }
+  .pro-forma th { background: var(--navy); }
+  .pro-forma .total td { background: var(--navy); color: var(--white); font-weight: 700; font-size: 15px; }
+  .pro-forma .total td.num { color: var(--gold); }
+  .pro-forma .subtotal td { background: var(--gray-50); font-weight: 600; }
+
+  /* ===== TEAM ===== */
+  .team-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px; margin-top: 40px;
+  }
+  .agent-card {
+    text-align: center; padding: 30px 24px;
+    background: var(--white); border-bottom: 3px solid var(--gold);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .agent-card img {
+    width: 140px; height: 140px; border-radius: 50%;
+    object-fit: cover; margin-bottom: 20px;
+    border: 3px solid var(--gold);
+  }
+  .agent-card h4 {
+    color: var(--navy); font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px; margin-bottom: 6px; font-weight: 500;
+  }
+  .agent-card .title {
+    font-size: 13px; color: var(--gold); text-transform: uppercase;
+    letter-spacing: 1.5px; font-weight: 600; margin-bottom: 18px;
+  }
+  .agent-card .contact { font-size: 14px; color: var(--gray-600); line-height: 1.9; }
+  .agent-card .contact a { color: var(--navy); text-decoration: none; }
+  .agent-card .contact a:hover { color: var(--gold); }
+  .agent-card .license { font-size: 11px; color: var(--gray-400); margin-top: 12px; }
+
+  /* ===== HOW WE SELL ===== */
+  .process-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px; margin-top: 40px;
+  }
+  .process-step {
+    padding: 28px 24px; border-top: 3px solid var(--gold);
+    background: rgba(255,255,255,0.06);
+  }
+  .process-step .num {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--gold); font-size: 36px; line-height: 1; margin-bottom: 10px; font-weight: 600;
+  }
+  .process-step h4 {
+    color: var(--white); font-family: 'Inter', sans-serif;
+    font-size: 16px; font-weight: 700; margin-bottom: 12px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .process-step p { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.6; margin: 0; }
+
+  /* ===== EXECUTION METRICS ===== */
+  .exec-metrics {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .exec-metric {
+    padding: 28px 20px; text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.15);
+  }
+  .exec-metric:last-child { border-right: none; }
+  .exec-metric .val {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 34px; color: var(--gold); line-height: 1; font-weight: 600;
+  }
+  .exec-metric .lbl {
+    font-size: 12px; color: rgba(255,255,255,0.7); letter-spacing: 1px;
+    text-transform: uppercase; margin-top: 8px;
+  }
+  @media (max-width: 700px) {
+    .exec-metric { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+    .exec-metric:last-child { border-bottom: none; }
+  }
+
+  /* ===== CALLOUT ===== */
+  .callout {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: var(--white); padding: 50px;
+    border-left: 5px solid var(--gold);
+    margin: 40px 0;
+  }
+  .callout h3 { color: var(--white); font-size: 28px; margin-top: 0; }
+  .callout p { color: rgba(255,255,255,0.9); font-size: 17px; margin-bottom: 0; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--navy-dark); color: rgba(255,255,255,0.75);
+    padding: 60px 0 30px;
+  }
+  footer .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px; margin-bottom: 40px;
+  }
+  @media (max-width: 800px) { footer .footer-grid { grid-template-columns: 1fr; gap: 30px; } }
+  footer h5 {
+    color: var(--white); font-family: 'Inter', sans-serif;
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
+    margin-bottom: 16px; font-weight: 600;
+  }
+  footer img.logo { height: 36px; margin-bottom: 16px; }
+  footer p { font-size: 13px; line-height: 1.7; margin-bottom: 0; }
+  footer a { color: rgba(255,255,255,0.85); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+  footer .disclaimer {
+    font-size: 11px; color: rgba(255,255,255,0.45); padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.6;
+  }
+
+  /* ===== UTILITIES ===== */
+  .text-center { text-align: center; }
+  .text-gold { color: var(--gold); }
+  .mt-0 { margin-top: 0; }
+  .mb-0 { margin-bottom: 0; }
+  ul.bullets { margin: 16px 0 16px 22px; }
+  ul.bullets li { margin-bottom: 8px; font-size: 16px; }
+  .legend { font-size: 13px; color: var(--gray-600); margin-top: 12px; font-style: italic; }
+
+  @media print {
+    nav { display: none; }
+    section { padding: 30px 0; page-break-inside: avoid; }
+    .hero { min-height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="container">
+    <img src="images/logo-white.png" alt="LAAA Team" />
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#project">The Project</a></li>
+      <li><a href="#proforma">Pro Forma</a></li>
+      <li><a href="#comps">Comps</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Fully Entitled Small-Lot Subdivision</div>
+    <h1>601 Pearl Street<br/>Ojai, California</h1>
+    <p class="subtitle">Nine detached single-family homes on ten platted lots in the heart of Ojai. Approved Architectural, Civil, Landscape, and Structural sets in hand. Shovel-ready.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="val">$3,700,000</div>
+        <div class="lbl">Asking Price</div>
+      </div>
+      <div class="hero-stat">
+        <div class="val">9 Homes</div>
+        <div class="lbl">Buildable Units</div>
+      </div>
+      <div class="hero-stat">
+        <div class="val">10 Lots</div>
+        <div class="lbl">Platted (Tract 5964)</div>
+      </div>
+      <div class="hero-stat">
+        <div class="val">$411,111</div>
+        <div class="lbl">Per Buildable Unit</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== OVERVIEW ===== -->
+<section id="overview">
+  <div class="container">
+    <div class="section-eyebrow">Investment Overview</div>
+    <h2>A Shovel-Ready Subdivision in One of California&rsquo;s Most Coveted Towns</h2>
+    <p class="lead">The LAAA Team is proud to present 601 Pearl Street, a rare opportunity to acquire a fully entitled, fully platted small-lot subdivision steps from downtown Ojai. The seller has completed the heavy lifting: ten lots recorded under Tract No. 5964, full approved plan sets across Architectural, Civil, Landscape, and Structural disciplines, and a development program for nine detached homes averaging 1,835 SF each. A buyer steps into a project ready to permit and pour foundations, in a market where new construction is exceptionally scarce.</p>
+    <p>Ojai&rsquo;s housing market is supply-constrained by design. The city&rsquo;s strict growth controls and small-town zoning have protected its character for generations, and the result is one of the most consistently priced lifestyle markets in coastal Southern California. Recent single-family sales near downtown have traded at a median of $1.25M with a $/SF distribution that runs from the $600s for older product to north of $1,200/SF for premium and renovated homes. New construction trades at the top of that range and is the rarest product in the submarket.</p>
+    <p>At an asking price of $3,700,000, the offering represents $411,111 per buildable home and $73 per land square foot. Against a development program with a $1,486,350 per-home blended exit (the seller&rsquo;s own model at $810/SF on 1,835 SF) and a total all-in build cost of approximately $6.4M, the residual model leaves a developer with roughly $2.0M of profit at a 16% margin on net revenue. The price already reflects movement from the seller&rsquo;s original $4.5M ask.</p>
+  </div>
+</section>
+
+<!-- ===== KEY METRICS ===== -->
+<section class="alt" style="padding-top: 0; padding-bottom: 90px;">
+  <div class="container">
+    <div class="key-metrics">
+      <div class="key-metric">
+        <div class="val">$3.7M</div>
+        <div class="lbl">List Price</div>
+      </div>
+      <div class="key-metric">
+        <div class="val">9</div>
+        <div class="lbl">Buildable Homes</div>
+      </div>
+      <div class="key-metric">
+        <div class="val">1,835 SF</div>
+        <div class="lbl">Avg Home Size</div>
+      </div>
+      <div class="key-metric">
+        <div class="val">$810/SF</div>
+        <div class="lbl">Modeled Exit Price</div>
+      </div>
+      <div class="key-metric">
+        <div class="val">16.2%</div>
+        <div class="lbl">Developer Profit Margin</div>
+      </div>
+    </div>
+
+    <div class="section-eyebrow" style="margin-top: 20px;">Investment Highlights</div>
+    <h2>Why 601 Pearl Stands Out</h2>
+    <div class="highlights">
+      <div class="highlight-card">
+        <h4>Fully Entitled and Platted</h4>
+        <p>Ten individually recorded lots under Tract No. 5964, with approved Architectural, Civil, Landscape, and Structural sets. No further mapping required. A buyer can pull permits and begin construction without entitlement risk.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Scarcity-Driven Ojai Market</h4>
+        <p>Ojai&rsquo;s growth controls suppress new supply by design. Across a 36-comp set of recent sales near downtown, virtually none are new construction. Subject is the only entitled small-lot project of meaningful scale in the immediate downtown corridor.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Defensible Residual at the Ask</h4>
+        <p>Seller&rsquo;s own underwriting at $3.7M land, $380/SF hard cost, $810/SF exit and 18-month carry leaves $2.06M in developer profit (16.23% on net revenue). Independent residual run by the LAAA Team produces similar results across multiple cost and exit scenarios.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Multiple Exit Strategies</h4>
+        <p>The same nine-home program supports a build-to-sell exit at $13.4M gross sellout or a build-to-rent hold at $5.5M&ndash;$6.2M in stabilized value (NOI of $605K&ndash;$632K at $6,000&ndash;$6,250 monthly rents). Optionality reduces market-cycle risk.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Walkable Downtown Location</h4>
+        <p>Steps from the Ojai Avenue Arcade, downtown shops, restaurants, and the Saturday farmers&rsquo; market. Buyers in this corridor pay premiums for walkability. Pearl Street is one of the few residential blocks where buyers can have both town life and lot privacy.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Distressed Seller, Clean Title</h4>
+        <p>Property tax has been delinquent on all ten parcels since 2023-2024, signaling a capital-constrained seller. Total redemption is approximately $22,000 across all lots, easily cured at closing from seller proceeds. Title is held in a single California LLC vesting; no partition or partnership cleanup required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE PROJECT ===== -->
+<section id="project" class="navy">
+  <div class="container">
+    <div class="section-eyebrow">The Project</div>
+    <h2>Nine Detached Homes, Built and Sold Individually</h2>
+    <p class="lead">The approved program delivers nine detached single-family homes averaging 1,835 SF, with two-bedroom plus office or three-bedroom layouts. Each home sits on its own platted, separately deeded lot, enabling lot-by-lot construction financing and lot-by-lot exit. Total buildable program is 16,515 SF across 50,530 SF of land.</p>
+
+    <div class="two-col" style="margin-top: 40px;">
+      <div class="info-box" style="background: rgba(255,255,255,0.05); color: var(--white); border-top-color: var(--gold);">
+        <h4 style="color: var(--gold); border-bottom-color: rgba(255,255,255,0.15);">Development Program</h4>
+        <dl>
+          <dt style="color: rgba(255,255,255,0.7);">Buildable Homes</dt><dd style="color: var(--white);">9 detached SFDs</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Average Home Size</dt><dd style="color: var(--white);">1,835 SF</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Total Buildable SF</dt><dd style="color: var(--white);">16,515 SF</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Lot Count</dt><dd style="color: var(--white);">10 platted (Tract 5964)</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Total Site Area</dt><dd style="color: var(--white);">50,530 SF (~1.16 acres)</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Plan Sets in Hand</dt><dd style="color: var(--white);">Architectural, Civil, Landscape, Structural</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Entitlement Status</dt><dd style="color: var(--white);">Fully entitled and platted</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Permit Status</dt><dd style="color: var(--white);">Ready to pull</dd>
+        </dl>
+      </div>
+      <div class="info-box" style="background: rgba(255,255,255,0.05); color: var(--white); border-top-color: var(--gold);">
+        <h4 style="color: var(--gold); border-bottom-color: rgba(255,255,255,0.15);">Title &amp; Ownership</h4>
+        <dl>
+          <dt style="color: rgba(255,255,255,0.7);">Vested Owner</dt><dd style="color: var(--white);">Pearl Street Associates, LLC</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Estate</dt><dd style="color: var(--white);">Fee Simple</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Tract</dt><dd style="color: var(--white);">No. 5964, Book 169, Pages 38&ndash;40</dd>
+          <dt style="color: rgba(255,255,255,0.7);">APN Count</dt><dd style="color: var(--white);">10 (one per lot)</dd>
+          <dt style="color: rgba(255,255,255,0.7);">APN Range</dt><dd style="color: var(--white);">023-0-141-445 to -535</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Title Company</dt><dd style="color: var(--white);">Old Republic Title</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Known Easement</dt><dd style="color: var(--white);">City of Ojai storm water (1948)</dd>
+          <dt style="color: rgba(255,255,255,0.7);">Listing Price</dt><dd style="color: var(--gold); font-size: 16px;">$3,700,000</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRO FORMA ===== -->
+<section id="proforma">
+  <div class="container">
+    <div class="section-eyebrow">Development Pro Forma</div>
+    <h2>The Residual Model at $3,700,000</h2>
+    <p class="lead">The pro forma below is the seller&rsquo;s own underwriting, prepared at $380 per SF hard cost, an 18-month build, and an $810/SF blended exit. At the $3.7M asking price, a developer earns approximately $2.06M of profit on $12.7M of net sale proceeds, equating to a 16.23% margin on net revenue.</p>
+
+    <div class="pro-forma">
+      <h3 style="margin-top: 0;">Development Cost Build-Up</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Line Item</th>
+            <th class="num">Calculation</th>
+            <th class="num">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Hard Construction Cost</td><td class="num">16,515 SF &times; $380/SF</td><td class="num">$6,275,700</td></tr>
+          <tr><td>Soft Costs</td><td class="num">Engineering, permits, legal</td><td class="num">$90,000</td></tr>
+          <tr class="subtotal"><td>Total Development Cost</td><td class="num"></td><td class="num">$6,365,700</td></tr>
+          <tr><td>Construction Loan Interest</td><td class="num">7.5% &times; 18 months</td><td class="num">$475,623</td></tr>
+          <tr><td>Property Tax + Insurance (during build)</td><td class="num">18 months</td><td class="num">$104,063</td></tr>
+          <tr class="subtotal"><td>Total Carry &amp; Financing</td><td class="num"></td><td class="num">$579,686</td></tr>
+          <tr><td>Land Cost (Asking)</td><td class="num">$3.7M &divide; 9 units</td><td class="num">$3,700,000</td></tr>
+          <tr class="total"><td>Total Project Cost</td><td class="num"></td><td class="num">$10,645,386</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Sale Revenue &amp; Profit</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Line Item</th>
+            <th class="num">Calculation</th>
+            <th class="num">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Gross Sales Proceeds</td><td class="num">9 &times; $1,486,350</td><td class="num">$13,377,150</td></tr>
+          <tr><td>Closing Costs of Sale</td><td class="num">5.00%</td><td class="num">($668,858)</td></tr>
+          <tr class="subtotal"><td>Net Sale Proceeds</td><td class="num"></td><td class="num">$12,708,293</td></tr>
+          <tr><td>Less: Total Project Cost</td><td class="num"></td><td class="num">($10,645,386)</td></tr>
+          <tr class="total"><td>Developer&rsquo;s Profit</td><td class="num">16.23% on Net Revenue</td><td class="num">$2,062,907</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Sensitivity &mdash; Profit at Different Land Prices</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Land Price</th>
+              <th class="num">Per Buildable Unit</th>
+              <th class="num">Per Land SF</th>
+              <th class="num">All-In Cost</th>
+              <th class="num">Developer Profit</th>
+              <th class="num">Margin on Net Revenue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight"><td><strong>$3,700,000 &mdash; Asking</strong></td><td class="num">$411,111</td><td class="num">$73</td><td class="num">$10,066,085</td><td class="num">$2,062,522</td><td class="num">16.23%</td></tr>
+            <tr><td>$3,600,000</td><td class="num">$400,000</td><td class="num">$71</td><td class="num">$9,966,085</td><td class="num">$2,170,060</td><td class="num">17.08%</td></tr>
+            <tr><td>$3,500,000</td><td class="num">$388,889</td><td class="num">$69</td><td class="num">$9,866,085</td><td class="num">$2,277,597</td><td class="num">17.92%</td></tr>
+            <tr><td>$3,400,000</td><td class="num">$377,778</td><td class="num">$67</td><td class="num">$9,766,085</td><td class="num">$2,385,135</td><td class="num">18.77%</td></tr>
+            <tr><td>$3,300,000</td><td class="num">$366,667</td><td class="num">$65</td><td class="num">$9,666,085</td><td class="num">$2,492,672</td><td class="num">19.61%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="legend">Sensitivity table reflects the construction-loan interest decreasing as land price decreases. All other assumptions held constant. Source: 601 Pearl St &mdash; Small Lot Model (seller-prepared).</p>
+    </div>
+
+    <div class="callout">
+      <h3>Alternative Exit: Build-to-Rent</h3>
+      <p>The same nine-home program supports a build-to-rent hold. At $6,000 to $6,250 in monthly rent per home, the program generates $605,000 to $632,000 of NOI. On an all-in basis of approximately $7.0M (land plus development), this implies a stabilized yield in the 9 to 10 percent range &mdash; a credible Plan B for a buyer who wants to retain the asset through a softer for-sale cycle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPS ===== -->
+<section id="comps" class="alt">
+  <div class="container">
+    <div class="section-eyebrow">Comparable Sales</div>
+    <h2>What 1,200 to 2,000 SF Homes Are Trading For Near Downtown Ojai</h2>
+    <p class="lead">The comp set below pulls every recorded single-family sale within a one-mile radius of downtown Ojai over the trailing 24 months, then filters to the 17 transactions most directly comparable to the subject&rsquo;s 1,835 SF target product. Median sale price across the subset is approximately $1.23M; $/SF runs from the high-$500s on tired vintage product up past $1,300/SF on renovated downtown homes. The seller&rsquo;s $810/SF exit assumption sits comfortably inside the distribution and below the premium tier.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Address</th>
+            <th class="center">Bd/Br</th>
+            <th class="num">SF</th>
+            <th class="num">Lot SF</th>
+            <th class="center">Year</th>
+            <th class="center">Sale Date</th>
+            <th class="num">Sale Price</th>
+            <th class="num">$/SF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>202 N. Fulton St</td><td class="center">3/2</td><td class="num">1,196</td><td class="num">7,405</td><td class="center">1977</td><td class="center">Jul 2025</td><td class="num">$1,293,500</td><td class="num">$1,082</td></tr>
+          <tr><td>309 N. Fulton St</td><td class="center">3/2</td><td class="num">1,430</td><td class="num">7,500</td><td class="center">1928</td><td class="center">May 2024</td><td class="num">$1,205,000</td><td class="num">$843</td></tr>
+          <tr><td>309 Topa Topa Dr</td><td class="center">2/2</td><td class="num">1,384</td><td class="num">7,504</td><td class="center">1946</td><td class="center">May 2025</td><td class="num">$1,230,000</td><td class="num">$889</td></tr>
+          <tr><td>314 W. Aliso St #A</td><td class="center">3/1</td><td class="num">914</td><td class="num">6,969</td><td class="center">1929</td><td class="center">Jun 2025</td><td class="num">$1,200,000</td><td class="num">$1,313</td></tr>
+          <tr><td>312 E. Matilija St</td><td class="center">3/2</td><td class="num">1,325</td><td class="num">8,727</td><td class="center">1957</td><td class="center">Sep 2024</td><td class="num">$1,000,000</td><td class="num">$755</td></tr>
+          <tr><td>413 Crestview Dr</td><td class="center">3/2</td><td class="num">1,260</td><td class="num">5,850</td><td class="center">1957</td><td class="center">Jun 2024</td><td class="num">$1,200,000</td><td class="num">$952</td></tr>
+          <tr><td>301 Park Rd</td><td class="center">2/2</td><td class="num">1,659</td><td class="num">8,957</td><td class="center">1947</td><td class="center">Sep 2025</td><td class="num">$1,300,000</td><td class="num">$784</td></tr>
+          <tr><td>405 Oriole St</td><td class="center">3/2</td><td class="num">1,531</td><td class="num">9,853</td><td class="center">1977</td><td class="center">Jul 2024</td><td class="num">$1,330,000</td><td class="num">$869</td></tr>
+          <tr><td>1117 Golden West Ave</td><td class="center">3/2</td><td class="num">1,531</td><td class="num">10,018</td><td class="center">1977</td><td class="center">Jul 2023</td><td class="num">$1,275,000</td><td class="num">$833</td></tr>
+          <tr><td>1207 San Ramon Way</td><td class="center">3/2</td><td class="num">2,312</td><td class="num">12,493</td><td class="center">1985</td><td class="center">May 2023</td><td class="num">$1,579,000</td><td class="num">$683</td></tr>
+          <tr><td>1209 San Ramon Way</td><td class="center">3/2</td><td class="num">1,987</td><td class="num">12,196</td><td class="center">1985</td><td class="center">Oct 2025</td><td class="num">$1,395,000</td><td class="num">$702</td></tr>
+          <tr><td>503 Drown Ave</td><td class="center">2/2</td><td class="num">1,188</td><td class="num">7,100</td><td class="center">1927</td><td class="center">Oct 2023</td><td class="num">$1,330,000</td><td class="num">$1,120</td></tr>
+          <tr><td>209 Bald St</td><td class="center">4/2</td><td class="num">2,179</td><td class="num">8,131</td><td class="center">1951</td><td class="center">Nov 2024</td><td class="num">$1,275,000</td><td class="num">$585</td></tr>
+          <tr><td>412 N. Signal St</td><td class="center">3/1</td><td class="num">1,100</td><td class="num">7,500</td><td class="center">1951</td><td class="center">Jul 2024</td><td class="num">$1,035,000</td><td class="num">$941</td></tr>
+          <tr><td>201 Fox St</td><td class="center">3/2</td><td class="num">1,135</td><td class="num">4,791</td><td class="center">1948</td><td class="center">Feb 2026</td><td class="num">$1,029,500</td><td class="num">$907</td></tr>
+          <tr class="highlight"><td>216 E. Matilija St (Premium tier)</td><td class="center">2/3</td><td class="num">1,955</td><td class="num">8,000</td><td class="center">1957</td><td class="center">Feb 2024</td><td class="num">$2,400,000</td><td class="num">$1,228</td></tr>
+          <tr class="highlight"><td>216 E. Matilija St (Re-sale at premium)</td><td class="center">2/3</td><td class="num">1,955</td><td class="num">7,840</td><td class="center">1957</td><td class="center">Dec 2025</td><td class="num">$2,475,000</td><td class="num">$1,266</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="legend">Source: MLS-tracked closed sales near downtown Ojai over the trailing 24 months, filtered to 1,200&ndash;2,000 SF range (with two premium-tier reference points). Full 36-sale comp set on file with the LAAA Team. The two 216 E. Matilija sales are the same property selling twice in 22 months at premium pricing &mdash; a direct demonstration of buyer willingness to pay above $1,200/SF for premium downtown product.</p>
+
+    <h3 style="margin-top: 50px;">How the Comps Support the Exit Assumption</h3>
+    <ul class="bullets">
+      <li>Median price across the 1,200&ndash;2,000 SF subset: approximately $1.23M. Median $/SF: approximately $820.</li>
+      <li>Seller&rsquo;s exit at $810/SF on 1,835 SF produces $1,486,350 per home &mdash; about 20% above the median comparable sale price.</li>
+      <li>That 20% premium is supported by new-construction differential (zero deferred maintenance, modern systems, manufacturer warranties).</li>
+      <li>Premium downtown product is trading at $1,228 to $1,266/SF, demonstrating clear willingness to pay above $1,200/SF for the right quality and location. Subject sits well below that ceiling.</li>
+      <li>Across the full 36-sale, two-year comp set, virtually none are new construction &mdash; the subject is the only entitled small-lot project of meaningful scale in the immediate downtown corridor.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section id="location">
+  <div class="container">
+    <div class="section-eyebrow">Location</div>
+    <h2>Ojai &mdash; Coastal California&rsquo;s Most Protected Small Town</h2>
+    <p class="lead">Ojai sits 14 miles inland from Ventura and roughly 80 miles northwest of Los Angeles, in a long east-west valley sheltered by the Topa Topa Mountains. The city&rsquo;s population is roughly 7,500, and growth controls keep it that way. Strict zoning, a town-wide architectural overlay, height restrictions, and a tightly capped subdivision pipeline make new for-sale product genuinely rare. The result is one of the most supply-constrained lifestyle markets on the Southern California coast.</p>
+
+    <div class="two-col" style="margin-top: 36px;">
+      <div>
+        <h3 style="margin-top: 0;">What Drives Demand in Ojai</h3>
+        <ul class="bullets">
+          <li><strong>Destination economy.</strong> Ojai Valley Inn, the Ojai Music Festival, downtown wellness and arts scene draw a steady flow of high-income visitors who often convert to second-home buyers.</li>
+          <li><strong>Lifestyle migration.</strong> Buyers from Los Angeles, Santa Barbara, and the Bay Area continue to pay a premium for the climate, the hiking and biking access, and the small-town character.</li>
+          <li><strong>School district.</strong> Ojai Unified is the local district and a major draw for permanent residents with families.</li>
+          <li><strong>Tight supply.</strong> Growth controls cap new subdivisions. The result is a structurally undersupplied housing market that has resisted broader California softness.</li>
+          <li><strong>Downtown walkability.</strong> Pearl Street is steps from the Arcade, the post office, restaurants, and the Saturday farmers&rsquo; market. Buyers in this corridor pay premiums for the ability to walk.</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>Site Snapshot</h4>
+        <dl>
+          <dt>Address</dt><dd>601 Pearl Street, Ojai, CA 93023</dd>
+          <dt>County</dt><dd>Ventura</dd>
+          <dt>City</dt><dd>Ojai</dd>
+          <dt>School District</dt><dd>Ojai Unified</dd>
+          <dt>Walk to Downtown</dt><dd>Steps to Ojai Avenue Arcade</dd>
+          <dt>Drive to Ventura</dt><dd>~20 minutes</dd>
+          <dt>Drive to Santa Barbara</dt><dd>~50 minutes</dd>
+          <dt>Drive to Downtown LA</dt><dd>~90 minutes</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW WE SELL ===== -->
+<section class="navy" id="process">
+  <div class="container">
+    <div class="section-eyebrow">How We Sell</div>
+    <h2>A Proven Four-Step Process</h2>
+    <p class="lead">Our process is built on $1.4B+ in closed transactions and 455+ deals since 2013. Every listing gets the same disciplined execution &mdash; pricing backed by codified benchmarks, multi-channel exposure, and hands-on negotiation and closing management.</p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="num">01</div>
+        <h4>Price It Right</h4>
+        <p>Pricing backed by codified benchmarks from 455+ closed transactions and 55,000+ buildings tracked across LA and Ventura counties. Data-driven valuations, not guesswork.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">02</div>
+        <h4>Maximum Exposure</h4>
+        <p>100+ targeted calls per listing. 40,000+ verified investor email database built over 12 years. Premium placement on CoStar, LoopNet, Crexi, MLS, and Marcus &amp; Millichap. Professional drone and ground photography.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">03</div>
+        <h4>Negotiate the Best Deal</h4>
+        <p>Offer matrix comparing every offer side-by-side. Buyer vetting and proof-of-funds verification. Each offer evaluated on price, terms, contingencies, and certainty of close.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">04</div>
+        <h4>Close with Confidence</h4>
+        <p>Transparent communication and hands-on management from listing to closing. 1031 exchange coordination with 100+ exchanges facilitated. Weekly marketing updates with candid buyer feedback.</p>
+      </div>
+    </div>
+
+    <div class="exec-metrics">
+      <div class="exec-metric"><div class="val">16 Days</div><div class="lbl">Avg to Accepted Offer</div></div>
+      <div class="exec-metric"><div class="val">98%</div><div class="lbl">Sale-to-List Ratio</div></div>
+      <div class="exec-metric"><div class="val">29%</div><div class="lbl">Sold At or Above Asking</div></div>
+      <div class="exec-metric"><div class="val">$1.4B+</div><div class="lbl">Closed Transactions</div></div>
+      <div class="exec-metric"><div class="val">455+</div><div class="lbl">Deals Since 2013</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team" class="alt">
+  <div class="container">
+    <div class="section-eyebrow">Your Team</div>
+    <h2>Exclusively Marketed By</h2>
+    <p class="lead">Ventura County deals are led by Logan Ward, the LAAA Team&rsquo;s specialist for the Ventura and Santa Barbara County corridor. Logan partners with co-founders Glen Scher and Filip Niculete &mdash; senior managing directors who together have closed more than $1.4 billion in transactions across Los Angeles, Ventura, and Santa Barbara counties.</p>
+
+    <div class="team-grid">
+      <div class="agent-card">
+        <img src="images/Logan_Ward.png" alt="Logan Ward" />
+        <h4>Logan Ward</h4>
+        <div class="title">Associate &mdash; Ventura/SB Specialist</div>
+        <div class="contact">
+          <a href="tel:8182122675">(818) 212-2675</a><br/>
+          <a href="mailto:Logan.Ward@marcusmillichap.com">Logan.Ward@marcusmillichap.com</a>
+        </div>
+        <div class="license">CA License 02200464</div>
+      </div>
+
+      <div class="agent-card">
+        <img src="images/Glen_Scher.png" alt="Glen Scher" />
+        <h4>Glen Scher</h4>
+        <div class="title">Senior Managing Director Investments</div>
+        <div class="contact">
+          <a href="tel:8182122808">(818) 212-2808</a><br/>
+          <a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a>
+        </div>
+        <div class="license">CA License 01962976</div>
+      </div>
+
+      <div class="agent-card">
+        <img src="images/Filip_Niculete.png" alt="Filip Niculete" />
+        <h4>Filip Niculete</h4>
+        <div class="title">Senior Managing Director Investments</div>
+        <div class="contact">
+          <a href="tel:8182122748">(818) 212-2748</a><br/>
+          <a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a>
+        </div>
+        <div class="license">CA License 01905352</div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 60px;">
+      <h3>We Didn&rsquo;t Invent Great Service. We Just Work Relentlessly to Provide It.</h3>
+      <p>Ready to tour the site, walk the plans, or discuss the underwriting? Reach out to any member of the team above. We&rsquo;ll coordinate site access, deliver the full due diligence package, and walk you through the model line by line.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="logo" src="images/logo-white.png" alt="LAAA Team" />
+        <p>The LAAA Team at Marcus &amp; Millichap. Multifamily, land, and development investment sales across Los Angeles, Ventura, and Santa Barbara counties since 2013.</p>
+        <p style="margin-top: 12px;"><a href="https://marcusmillichap.com/laaa-team" target="_blank">marcusmillichap.com/laaa-team</a></p>
+      </div>
+      <div>
+        <h5>Office</h5>
+        <p>16830 Ventura Blvd, Ste. 100<br/>Encino, CA 91436<br/><a href="tel:8182122700">(818) 212-2700</a></p>
+      </div>
+      <div>
+        <h5>This Listing</h5>
+        <p>601 Pearl Street<br/>Ojai, CA 93023<br/><strong style="color: var(--gold);">$3,700,000</strong></p>
+      </div>
+    </div>
+    <p class="disclaimer">
+      This information has been secured from sources we believe to be reliable, but we make no representations or warranties, expressed or implied, as to the accuracy of the information. Buyers should conduct their own investigation. Marcus &amp; Millichap Real Estate Investment Services, Inc., a California Corporation. All financial projections are estimates based on assumptions and are subject to material change. The proforma and sensitivity tables presented are illustrative and have not been independently verified. Prospective purchasers should consult their own legal, tax, and accounting advisors. Logan Ward CA License 02200464. Glen Scher CA License 01962976. Filip Niculete CA License 01905352.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
