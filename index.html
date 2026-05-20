@@ -184,6 +184,8 @@
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   td.center, th.center { text-align: center; }
   tr.highlight td { background: rgba(197, 162, 88, 0.12); font-weight: 600; }
+  td a.comp-link { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--gray-400); transition: color 0.2s, border-color 0.2s; }
+  td a.comp-link:hover { color: var(--gold-dark); border-bottom-color: var(--gold); }
   .table-wrap { overflow-x: auto; margin: 28px 0; }
   .table-wrap table { margin: 0; }
 
@@ -662,13 +664,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>202 N. Fulton St</td><td class="center">3/2</td><td class="num">1,196</td><td class="num">7,405</td><td class="center">1977</td><td class="center">Jul 2025</td><td class="num">$1,293,500</td><td class="num">$1,082</td></tr>
-          <tr><td>309 Topa Topa Dr</td><td class="center">2/2</td><td class="num">1,384</td><td class="num">7,504</td><td class="center">1946</td><td class="center">May 2025</td><td class="num">$1,230,000</td><td class="num">$889</td></tr>
-          <tr><td>314 W. Aliso St #A</td><td class="center">3/1</td><td class="num">914</td><td class="num">6,969</td><td class="center">1929</td><td class="center">Jun 2025</td><td class="num">$1,200,000</td><td class="num">$1,313</td></tr>
-          <tr><td>301 Park Rd</td><td class="center">2/2</td><td class="num">1,659</td><td class="num">8,957</td><td class="center">1947</td><td class="center">Sep 2025</td><td class="num">$1,300,000</td><td class="num">$784</td></tr>
-          <tr><td>1209 San Ramon Way</td><td class="center">3/2</td><td class="num">1,987</td><td class="num">12,196</td><td class="center">1985</td><td class="center">Oct 2025</td><td class="num">$1,395,000</td><td class="num">$702</td></tr>
-          <tr><td>201 Fox St</td><td class="center">3/2</td><td class="num">1,135</td><td class="num">4,791</td><td class="center">1948</td><td class="center">Feb 2026</td><td class="num">$1,029,500</td><td class="num">$907</td></tr>
-          <tr class="highlight"><td>216 E. Matilija St (Premium tier)</td><td class="center">2/3</td><td class="num">1,955</td><td class="num">7,840</td><td class="center">1957</td><td class="center">Dec 2025</td><td class="num">$2,475,000</td><td class="num">$1,266</td></tr>
+          <tr><td><a class="comp-link" href="https://www.zillow.com/homes/202-N-Fulton-St-Ojai-CA-93023_rb/" target="_blank" rel="noopener">202 N. Fulton St</a></td><td class="center">3/2</td><td class="num">1,196</td><td class="num">7,405</td><td class="center">1977</td><td class="center">Jul 2025</td><td class="num">$1,293,500</td><td class="num">$1,082</td></tr>
+          <tr><td><a class="comp-link" href="https://www.zillow.com/homes/309-Topa-Topa-Dr-Ojai-CA-93023_rb/" target="_blank" rel="noopener">309 Topa Topa Dr</a></td><td class="center">2/2</td><td class="num">1,384</td><td class="num">7,504</td><td class="center">1946</td><td class="center">May 2025</td><td class="num">$1,230,000</td><td class="num">$889</td></tr>
+          <tr><td><a class="comp-link" href="https://www.zillow.com/b/314-w-aliso-st-ojai-ca-9VB2F6/" target="_blank" rel="noopener">314 W. Aliso St #A</a></td><td class="center">3/1</td><td class="num">914</td><td class="num">6,969</td><td class="center">1929</td><td class="center">Jun 2025</td><td class="num">$1,200,000</td><td class="num">$1,313</td></tr>
+          <tr><td><a class="comp-link" href="https://www.zillow.com/homedetails/301-Park-Rd-Ojai-CA-93023/16311699_zpid/" target="_blank" rel="noopener">301 Park Rd</a></td><td class="center">2/2</td><td class="num">1,659</td><td class="num">8,957</td><td class="center">1947</td><td class="center">Sep 2025</td><td class="num">$1,300,000</td><td class="num">$784</td></tr>
+          <tr><td><a class="comp-link" href="https://www.zillow.com/homes/1209-San-Ramon-Way-Ojai-CA-93023_rb/" target="_blank" rel="noopener">1209 San Ramon Way</a></td><td class="center">3/2</td><td class="num">1,987</td><td class="num">12,196</td><td class="center">1985</td><td class="center">Oct 2025</td><td class="num">$1,395,000</td><td class="num">$702</td></tr>
+          <tr><td><a class="comp-link" href="https://www.zillow.com/homedetails/201-Fox-St-Ojai-CA-93023/16312130_zpid/" target="_blank" rel="noopener">201 Fox St</a></td><td class="center">3/2</td><td class="num">1,135</td><td class="num">4,791</td><td class="center">1948</td><td class="center">Feb 2026</td><td class="num">$1,029,500</td><td class="num">$907</td></tr>
+          <tr class="highlight"><td><a class="comp-link" href="https://www.zillow.com/homedetails/216-E-Matilija-St-Ojai-CA-93023/2067309354_zpid/" target="_blank" rel="noopener">216 E. Matilija St (Premium tier)</a></td><td class="center">2/3</td><td class="num">1,955</td><td class="num">7,840</td><td class="center">1957</td><td class="center">Dec 2025</td><td class="num">$2,475,000</td><td class="num">$1,266</td></tr>
         </tbody>
       </table>
     </div>
